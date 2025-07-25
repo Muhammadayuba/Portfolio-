@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #e0ffe0;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #000;
+  box-shadow: 0 0 15px 2px limegreen;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #111;
+  border-bottom: 4px solid limegreen;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+  border-radius: 0 0 15px 15px;
+}
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 2rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.7s ease-out forwards;
+  animation-delay: 0s;
+  animation-play-state: paused;
+}
+section h2{
+  color: limegreen;
+  font-size: 1.8rem;
+  border-bottom: 2px solid limegreen;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+section ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+section li {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+* {
+  transition: all 0.3s ease-in-out;
+}
+section:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px 1px rgba(50, 205, 50, 0.3);
+}
+section h2:hover{
+  border-color: darkgreen;
+  letter-spacing: 1px;
+}
+footer a:hover {
+  color: lightgreen;
+  text-decoration: underline;
+}
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
